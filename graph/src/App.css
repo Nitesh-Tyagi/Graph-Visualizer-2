@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Jost;
+  src: url(Jost-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* background-color: rgb(24, 24, 24); */
+  display: flex;
+  flex-direction: row;
+  font-family: Jost;
+}
+
+#left {
+  background-color: rgb(31, 31, 31);
+  height: 100vh;
+  width: 70vw;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#right {
+  background-color: rgb(27, 27, 27);
+  height: 100vh;
+  width: 30vw;
+}
+
+#inputForm {
+  background-color: rgb(47, 47, 47);
+  height: 140px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#file {
+  all: unset;
+  background-color: rgb(21, 21, 21); /* Same as the button background */
+  height: 30px;
+  width: 340px;
+  color: aliceblue; /* Text color */
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 36px;
+  display: block;
+  cursor: pointer;
+}
+
+#top {
+  background-color: rgb(47, 47, 47);
+
+  padding: 10px 0px;
+
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#bottom {
+  background-color: rgb(47, 47, 47);
+  height: 40px;
+
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button {
+  all: unset;
+  background-color: rgb(21, 21, 21);
+  height: 40px;
+  width: 200px;
+
+  margin: 10px 0px;
+
+  text-align: center;
+  border-radius: 14px;
+  color: aliceblue;
+}
+
+.button:hover {
+  background-color: rgb(29, 29, 29);
+  color: rgb(255, 183, 0);
+}
+
+#table {
+  max-height: 560px; /* Adjust to your preference */
+  overflow: auto; /* Enables scrolling */
+  border-collapse: collapse;
+  margin: 4px 0;
+
+  color: rgb(208, 208, 208);
+}
+
+#table::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* For better border handling */
+}
+
+th, td {
+  border: 1px solid rgb(26, 26, 26); /* Light grey border */
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(26, 26, 26); /* Light grey background for headers */
+  color: rgb(255, 183, 0);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(30, 30, 30); /* Zebra striping for rows */
+}
+
+tr:hover {
+  background-color: rgb(41, 41, 41); /* Row hover effect */
+}
+
+#graphContainer {
+  height: 670px;
+  width: 1000px;
+  background-color: rgb(43, 43, 43);
+      border-radius: 10px;
+
+  border: 8px solid rgb(18, 18, 18);
+}
